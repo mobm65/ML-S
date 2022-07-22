@@ -1,6 +1,6 @@
 # ML&S
  
-### SCIKIT LEARN
+# SCIKIT LEARN
 
 The Scikit Learn Jupyter Notebook opens with a brief outline of the uses of this library for predictive modelling.  There is an image showing the route that a data analyst might take in deciding which of the many scikit learn algorithms may be suitable for the particular dataset being explored.
 
@@ -15,3 +15,15 @@ The unsupervised algorithm KMeans Clustering. K-means follows a number of steps.
 number of clusters you choose, I chose three because there are three species of penguins.  I first ran a seaborn scattergraph which illustrates where the penguins are plotted with regard to bill length and depth.  The Kmeans algorithm shows the species as 0 (Amelie), 1 (Gentoo) and 2 (Chinstrap).  To check the prediction value of the algorithm I next randomly selected an array of two instances of penguins.  The answer showed them to be 0 (Amelie) and 1 (Gentoo) which they were.  The 4 integer traits can be entered here and used to check the reliability of the algorithm.
 
 run more centroid
+
+### Logistic Regression
+
+
+# Scipy-Stats
+
+This notebook opens with an explaination of the Scipy_stats library including some of its features and functions.  There is also some information on the purpose and process of ANOVA.  ANOVA requires a number of assumptions to be adhered to before you can consider the result of the ANOVA to be reliable.  In the next section I go through the 6 main assumptions. I then read in the crop yield data I have selected and examine the data to plan the study. The values are continuous so this satisfies the 1st assumption.  Next I examine the basic statistical data; mean, sd, quartile values and maximum and minimum values.  I establish one of the independent variables to be fertilizer, which comes in 3 types.  This is a categorical variable satisfying the 2nd assumption.  The dependent variable is crop_yield.  The next two cells show the affect of the density of planting and the part of the field where the crop was planted on the crop yield.  Next is looking at the fertilizer use on crops reiterating assumption 1.  Following this is a statistical analysis of the dependent variable.  The boxplot shows there is only one outlier which satisfies assumption 4.  I then ran a kernel destiny estiimates test which satisfied assumption 5, my samples belong to the normal distribution.  The Shapiro Wilk test confirmed the same.
+The Levene tests for homogeneity of variance to satisfy assumption 6.  The result is a p score, anything above .05 is considered non-significant, i.e., that equal variances are assumed.  My dataset satisfies assumption 6.
+
+### ANOVA
+
+The ANOVA is used to find out if there is a statistically significant difference of the means between groups. The p score is below 0.05 so we know at least some of the means are not equal.
