@@ -26,4 +26,4 @@ The Levene tests for homogeneity of variance to satisfy assumption 6.  The resul
 
 ### ANOVA
 
-The ANOVA is used to find out if there is a statistically significant difference of the means between groups. The p score is below 0.05 so we know at least some of the means are not equal.
+The ANOVA is used to find out if there is a statistically significant difference of the means between groups. The p score is below 0.05 so we know at least some of the means are not equal.  We then perform the Tukey test to see if every group has statistically different means from every other group.  The analysis shows that groups one and two may share a mean but groups one and three, and two and three do not.  The Confidence Interval plot illustrates this.
