@@ -12,12 +12,11 @@ The supervised algorithm KNeighbours Classifier which implements learning based 
 
 ### KMeans Clustering
 The unsupervised algorithm KMeans Clustering. K-means follows a number of steps. The first step is to randomly select k centroids, where k is equal to the 
-number of clusters you choose, I chose three because there are three species of penguins.  I first ran a seaborn scattergraph which illustrates where the penguins are plotted with regard to bill length and depth.  The Kmeans algorithm shows the species as 0 (Amelie), 1 (Gentoo) and 2 (Chinstrap).  To check the prediction value of the algorithm I next randomly selected an array of two instances of penguins.  The answer showed them to be 0 (Amelie) and 1 (Gentoo) which they were.  The 4 integer traits can be entered here and used to check the reliability of the algorithm.
+number of clusters you choose, I chose three because there are three species of penguins.  I first ran a seaborn scattergraph which illustrates where the penguins are plotted with regard to bill length and depth.  The Kmeans algorithm shows the species as 0 (Amelie), 1 (Gentoo) and 2 (Chinstrap).  To check the prediction value of the algorithm I next randomly selected an array of two instances of penguins.  The answer showed them to be 0 (Amelie) and 1 (Gentoo) which they were.  I used StandardScaler, which subtracts the mean from each features and then scales to the unit variance.  I then used pipeline to train the data, the outputs of the first step become the inputs of the next which allows the clusters to become more identifiable.
 
-run more centroid
 
 ### Logistic Regression
-
+To begin this function I dropped one species and the features of the species I was not studying, eg., habitat. 
 
 # Scipy-Stats
 
